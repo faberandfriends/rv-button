@@ -1,0 +1,9 @@
+.rv-button {
+    &.custom-icon::before {
+        content: attr(data-before) !important;
+    }
+
+    &.custom-icon::after {
+        content: attr(data-after) !important;
+    }
+}
