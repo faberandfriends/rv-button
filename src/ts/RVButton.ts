@@ -229,8 +229,8 @@ export default class RVButton {
 
         for (const triggerSelector in buttonSelectors) {
             const objectSelector = buttonSelectors[triggerSelector];
-            const trigger = document.querySelector<HTMLElement>(triggerSelector);
-            const object = document.querySelector<HTMLElement>(objectSelector);
+            const trigger = document.querySelectorAll<HTMLElement>(triggerSelector);
+            const object = document.querySelectorAll<HTMLElement>(objectSelector);
 
             if (trigger && object) buttons.push(new RVButton(trigger, object, options));
         }
